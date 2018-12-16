@@ -14,7 +14,7 @@ BRANDS=[]
 def brand=(brand)
     @brand = brand
     if BRANDS.include? (brand)==false 
-      binding.pry
+      binding
       BRANDS << brand
     end
   end
