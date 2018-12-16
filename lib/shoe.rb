@@ -1,4 +1,4 @@
-require pry
+
 class Shoe
   attr_accessor :color,  :size, :material, :condition
   attr_reader :brand
@@ -13,9 +13,7 @@ BRANDS=[]
   end
 def brand=(brand)
     @brand = brand
-    if BRANDS.include? (brand)==false 
-      binding
-      BRANDS << brand
-    end
+    if (BRANDS.include? (brand)==false ) BRANDS << brand
+    
   end
 end
