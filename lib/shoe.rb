@@ -16,6 +16,6 @@ def brand=(brand)
     #if (BRANDS.include?( brand) ) 
       BRANDS << brand
   #  end
-    
+    BRANDS=BRANDS.uniq
   end
 end
